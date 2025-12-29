@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>RocketHost - Responsive Hosting Website Template</title>
+		<!-- All Stylesheets -->
+		<link href="css/all-stylesheets.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="page-id coming-soon">
+		<!-- PRELOADER STARTS
+			========================================================================= --> 
+		<div id="preloader">
+			<div id="status">
+				<div class="spinner"></div>
+			</div>
+		</div>
+		<!-- /. PRELOADER ENDS
+			========================================================================= -->
+		<!-- PAGE CONTENT STARTS
+			========================================================================= -->
+		<section id="rk-coming-soon" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="comming-logo"><img alt="rocket-120" src="images/rk-logop.png"></div>
+						<h2 class="comming-title">We are glad to see you, But please be patient, This page is under construcion.</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12" id="counter">
+						<span>134 <em>days</em></span><span>12 <em>hours</em></span><span>50 <em>minutes</em></span><span>33 <em>seconds</em></span> 
+					</div>
+				</div>
+				<div class="row">
+					<div class="rocket-socials ">
+						<div class="socials-title">Or follow us on</div>
+						<div class="socials-list"><a href="#" class="social-facebook"><i class="fa fa-facebook"></i></a><a href="#" class="social-twitter"><i class="fa fa-twitter"></i></a><a href="#" class="social-google-plus"><i class="fa fa-google-plus"></i></a><a href="#" class="social-behance"><i class="fa fa-behance"></i></a><a href="#" class="social-dribbble"><i class="fa fa-dribbble"></i></a><a href="#" class="social-youtube"><i class="fa fa-youtube"></i></a></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="white-color">© 2016 – ROCKET HOST</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /. PAGE CONTENT ENDS
+			========================================================================= -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Bootstrap Dropdown Hover JS -->
+		<script src="js/dropdownhover/bootstrap-dropdownhover.min.js"></script>
+		<!-- Magnific Popup core JS file -->
+		<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.js"></script>
+		<!-- Owl Carousel -->
+		<script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+		<!-- Coming Soon Counter -->
+		<script src="js/comingsoon/jquery.countdown.js"></script>
+		<script>
+			var finalDate = '2018/01/01';			
+			  $('div#counter').countdown(finalDate)
+				  .on('update.countdown', function(event) {			
+					  $(this).html(event.strftime('<span>%D <em>days</em></span>' +
+						  '<span>%H <em>hours</em></span>' +
+						  '<span>%M <em>minutes</em></span>' +
+						  '<span>%S <em>seconds</em></span>'));
+				  });
+		</script>
+		<!-- Custom JS -->
+		<script src="js/custom/custom.js"></script>
+	</body>
+</html>
